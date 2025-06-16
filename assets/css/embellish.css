@@ -1,0 +1,36 @@
+
+/* Frosted glass */
+.backdrop {
+  background: rgba(20, 0, 30, 0.4);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 0 30px #c900ff44;
+}
+
+/* Neon Cursor */
+body {
+  cursor: none;
+}
+.cursor {
+  position: fixed;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ff00cc;
+  mix-blend-mode: difference;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* Button glow */
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #c900ff;
+}
+
+/* Injecting animation */
+.injecting {
+  opacity: 0.6;
+  pointer-events: none;
+}

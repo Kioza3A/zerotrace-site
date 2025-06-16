@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZeroTrace Spoofer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/global.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #0a001a, #1a001a);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      margin: 0;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .main-content {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .description {
+      flex: 1;
+      min-width: 300px;
+      max-width: 480px;
+      background: #120018;
+      border-radius: 18px;
+      padding: 2rem;
+      box-shadow: 0 0 25px #8f00ff44;
+    }
+
+    .description h2 {
+      color: #ff00cc;
+      margin-bottom: 1rem;
+    }
+
+    .description ul {
+      padding-left: 1.1rem;
+    }
+
+    .description li {
+      margin-bottom: 0.6rem;
+    }
+
+    .price {
+      margin-top: 1.4rem;
+    }
+
+    .spoof-img {
+      margin-top: 2rem;
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #333;
+      box-shadow: 0 0 12px #c900ff22;
+    }
+
+    .window {
+      flex: 1;
+      min-width: 300px;
+      max-width: 460px;
+      background: #110017;
+      border-radius: 20px;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 0 25px #a000ff66;
+    }
+
+    .window h1 {
+      color: #ff0055;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .window h3 {
+      text-align: center;
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-bottom: 1.8rem;
+    }
+    .info-line {
+      display: flex;
+      align-items: center;
+      margin: 0.4rem 0;
+      font-family: monospace;
+      font-size: 0.85rem;
+    }
+    .icon {
+      width: 18px;
+      margin-right: 10px;
+      color: #ff3366;
+    }
+    .row-title {
+      font-weight: bold;
+      margin-right: 0.5rem;
+      color: #ff3366;
+    }
+    .button-row {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .button {
+      background: #c900ff;
+      border: none;
+      padding: 0.9rem 1.5rem;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1rem;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 15px #c900ff99;
+      transition: all 0.2s ease;
+    }
+    .button:hover {
+      background: #9f00d6;
+      transform: scale(1.03);
+    }
+    .dots {
+      display: flex;
+      justify-content: space-between;
+      margin: 1.5rem 0 1rem;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      background: #ff0033;
+      border-radius: 50%;
+    }
+    .status {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
+  <link href="assets/css/embellish.css" rel="stylesheet">
+</head>
+<body>
+  <div class="main-content">
+    <div class="description backdrop">
+      <h2>ZeroTrace Permanent Spoofer for Valorant</h2>
+      <ul>
+        <li>✅ Built for Valorant & Vanguard</li>
+        <li>🔹 Bypasses Vanguard TPM/BIOS flags</li>
+        <li>🔹 Removes deep Valorant HWID traces (Disk, NIC, BIOS, RAM)</li>
+        <li>🔹 Works post-kernel, even on fresh bans</li>
+      </ul>
+      <h3>⚙️ Key Features</h3>
+      <ul>
+        <li>⚡ Permanent Spoofing – One-Time Use</li>
+        <li>🖥️ No PC Format or Reinstall Required</li>
+        <li>🧩 1-Click Operation</li>
+        <li>🎮 Multi-Game Ready: FiveM, Fortnite, COD, Rust</li>
+        <li>🧠 Beginner-Friendly UI</li>
+        <li>🛡️ Updated Weekly</li>
+        <li>🔒 Fully Undetected – Private Method</li>
+      </ul>
+      <h3 class="price">💸 Pricing</h3>
+      <ul>
+        <li>🔹 One-Time Access – 12.99€</li>
+        <li>🔹 Lifetime Access – 34.99€</li>
+      </ul>
+      <img src="assets/img/spoofer-ui.jpg" alt="Spoofer UI" class="spoof-img">
+    </div>
+
+    <div class="window backdrop">
+      <div class="dots">
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+      </div>
+      <h1>ZeroTrace</h1>
+      <h3>Hardware Virtualizer</h3>
+
+      <div class="info-line"><span class="icon">💾</span><span class="row-title">DISK:</span> <span id="disk">RBHB_7Y01AN2E</span></div>
+      <div class="info-line"><span class="icon">🧩</span><span class="row-title">MOBO:</span> <span id="mobo">XXKDIFGG8671</span></div>
+      <div class="info-line"><span class="icon">🖥️</span><span class="row-title">BIOS:</span> <span id="bios">27FE9AFF-F70E-250E-D64B-C223DD3AA2D5</span></div>
+      <div class="info-line"><span class="icon">🌐</span><span class="row-title">MAC:</span> <span id="mac">53-00-8B-63-01-EC</span></div>
+      <div class="info-line"><span class="icon">🛡️</span><span class="row-title">TPM:</span> <span id="tpm">TPM-F509-30A2-52B7</span></div>
+
+      <div class="button-row">
+        <button class="button" onclick="virtualize()">Virtualize</button>
+        <button class="button" onclick="efiVirtualize()">EFI Virtualization</button>
+      </div>
+
+      <div class="status" id="status">Click Virtualize to protect your hardware.</div>
+    </div>
+  </div>
+
+  <script>
+    function randomSerial(len) {
+      let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+      return Array(len).fill(0).map(() => chars[Math.floor(Math.random()*chars.length)]).join("");
+    }
+    function randomGUID() {
+      function s(n) { return Array(n).fill(0).map(() => "0123456789ABCDEF"[Math.floor(Math.random()*16)]).join(""); }
+      return s(8)+"-"+s(4)+"-"+s(4)+"-"+s(4)+"-"+s(12);
+    }
+    function randomMAC() {
+      return Array(6).fill(0).map(() => ("0"+Math.floor(Math.random()*256).toString(16)).slice(-2).toUpperCase()).join("-");
+    }
+    function virtualize() {
+      document.getElementById("disk").innerText = "RBHB_" + randomSerial(8);
+      document.getElementById("mobo").innerText = randomSerial(12);
+      document.getElementById("bios").innerText = randomGUID();
+      document.getElementById("mac").innerText = randomMAC();
+      document.getElementById("tpm").innerText = "TPM-" + randomSerial(4) + "-" + randomSerial(4) + "-" + randomSerial(4);
+      document.getElementById("status").innerText = "Spoofed + TPM disabled + Vanguard bypassed ✅";
+    }
+    function efiVirtualize() {
+      document.getElementById("status").innerText = "EFI Virtual Module Injected 🔧";
+    }
+  </script>
+  <script src="assets/js/embellish.js"></script>
+  <audio id="inject-sound" src="assets/sounds/inject.mp3"></audio>
+</body>
+</html>

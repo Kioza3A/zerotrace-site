@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZeroTrace Spoofer Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/transition.css">
+  <link rel="stylesheet" href="assets/css/intro.css">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/boot.css">
+  </head>
+<body>
+
+<!-- BIOS Boot Loader -->
+<div id="bios-boot">
+  <pre class="boot-text">
+ZerøTrace BIOS v3.2.7
+Initializing hardware... OK
+Checking TPM flags... Bypassed
+Spoofing MAC... OK
+Injecting low-level hooks... Injected
+Unbanning system... SUCCESS
+-------------------------------
+SYSTEM READY. PRESS ENTER TO CONTINUE_
+  </pre>
+</div>
+
+
+<audio id="bg-audio" autoplay loop hidden>
+  <source src="assets/audio/lowbass.mp3" type="audio/mp3">
+</audio>
+
+
+<!-- Glitchy Splash Screen -->
+<div id="splash-screen">
+  <div class="splash-text glitch" data-text="Injecting ZeroTrace...">Injecting ZeroTrace...</div>
+</div>
+
+
+<!-- Page Transition Overlay -->
+<div id="transition-overlay"></div>
+
+  <header>
+    <h1>ZeroTrace</h1>
+    <p>Best Spoofer On The Market</p>
+  </header>
+  <main>
+    <a href="product.html" class="card">
+      <h2>🎯 ZeroTrace Spoofer</h2>
+      <p>Permanent Spoofer for Valorant, FiveM, Fortnite, and more.</p>
+    </a>
+    <a href="faq.html" class="card">
+      <h2>❓ FAQ</h2>
+      <p>All you need to know about how it works and why we’re #1.</p>
+    </a>
+  </main>
+  <footer>
+    &copy; 2025 ZeroTrace. All rights reserved.
+  </footer>
+  <script src="assets/js/transition.js"></script>
+  <script src="assets/js/intro.js"></script>
+  <script src="assets/js/boot.js"></script>
+  
+<!-- Fake Admin Lock -->
+<script>
+  if (window.location.pathname.includes("admin")) {
+    const pass = prompt("Enter Admin Pass:");
+    if (pass !== "zerotrace") {
+      alert("Access Denied.");
+      location.href = "/";
+    }
+  }
+</script>
+
+</body>
+</html>

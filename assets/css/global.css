@@ -1,0 +1,27 @@
+
+body {
+  background: linear-gradient(135deg, #0a0010, #1a001a);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  color: #c900ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* Header, footer, nav cleanup */
+header, footer, nav {
+  background-color: rgba(10, 0, 16, 0.9);
+  color: white;
+}
+
+section, .content, .container {
+  background-color: transparent;
+}
